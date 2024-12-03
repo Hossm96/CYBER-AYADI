@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>التسجيل القبلي</title>
+    <link rel="stylesheet" href="style.css"> <!-- ربط ملف CSS الخارجي -->
+</head>
+<body>
+    <div class="cover-photo"></div>
+    <h1>التسجيل القبلي</h1>
+    <p>مرحبا بكم في صفحة التسجيل القبلي. يرجى ملء المعلومات المطلوبة للمتابعة.</p>
+    
+    <form>
+        <label for="name">الاسم الكامل:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">البريد الإلكتروني:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">رقم الهاتف:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="program">اختر البرنامج:</label>
+        <select id="program" name="program">
+            <option value="program1">برنامج 1</option>
+            <option value="program2">برنامج 2</option>
+            <option value="program3">برنامج 3</option>
+        </select>
+
+        <button type="submit">إرسال</button>
+    </form>
+</body>
+</html>

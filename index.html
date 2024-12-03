@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ملف شخصي - وضع الليل</title>
+    <link rel="stylesheet" href="style.css"> <!-- ربط ملف CSS الخارجي -->
+    <script src="script.js" defer></script> <!-- ربط ملف JavaScript الخارجي -->
+</head>
+<body>
+
+    <!-- صورة الغلاف وصورة الملف الشخصي -->
+    <div class="cover-photo">
+        <div class="profile-photo"></div>
+    </div>
+
+    <div class="container">
+        <!-- قائمة الخدمات على اليسار -->
+        <div class="menu">
+            <ul>
+                <li><a href="contracts.html" style="color: #e0e0e0; text-decoration: none;">عقود وطلبات</a></li>
+                <li><a href="pre_registration.html" style="color: #e0e0e0; text-decoration: none;">التسجيل القبلي</a></li>
+                <li><a href="addresses.html" style="color: #e0e0e0; text-decoration: none;">العناوين</a></li>
+                <li><a href="wtsp&tlgrm.html" style="color: #e0e0e0; text-decoration: none;">تواصل عبر واتساب وتيليجرام</a></li>
+                <li>تابعنا</li>
+            </ul>
+        </div>
+        
+        <!-- قسم الإعلانات -->
+        <div class="profile-info">
+            <h2>اعلانات</h2>
+            <div class="photos-section">
+                <div class="photo">
+                    <img src="https://imgur.com/6wzDBHO.jpg" alt="صورة 1" onclick="openModal('https://imgur.com/largeImage1.jpg', 'صورة 1')">
+                </div>
+                <div class="photo">
+                    <img src="https://imgur.com/rpj72Xg.jpg" alt="صورة 2" onclick="openModal('https://imgur.com/largeImage2.jpg', 'صورة 2')">
+                </div>
+                <div class="photo">
+                    <img src="https://imgur.com/DxJVmTH.jpg" alt="صورة 3" onclick="openModal('https://imgur.com/largeImage3.jpg', 'صورة 3')">
+                </div>
+                <div class="photo">
+                    <img src="https://imgur.com/zyiEXVj.jpg" alt="صورة 4" onclick="openModal('https://imgur.com/largeImage4.jpg', 'صورة 4')">
+                </div>
+                <div class="photo">
+                    <img src="https://imgur.com/D8COxsn.jpg" alt="صورة 5" onclick="openModal('https://imgur.com/largeImage5.jpg', 'صورة 5')">
+                </div>
+                <div class="photo">
+                    <img src="https://imgur.com/6wzDBHO.jpg" alt="صورة 6" onclick="openModal('https://imgur.com/largeImage6.jpg', 'صورة 6')">
+                </div>
+            </div>
+        </div>
+        
+        <!-- قائمة البيع والشراء على اليمين -->
+        <div class="buy-sell">
+            <ul>
+                <li>بيع</li>
+                <li>شراء</li>
+                <li>إعلانات</li>
+                <li>عروض خاصة</li>
+                <li>تواصل معنا</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- المودال لعرض الصورة الكبيرة -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImg">
+        <div id="caption"></div>
+    </div>
+
+</body>
+</html>
+
